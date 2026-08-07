@@ -28,10 +28,14 @@ class Person:
     result = self.weight / (self.height ** 2)
     print(round(result))
 
+def main():
+  person = Person()
+  person.name = "Giovani"
+  person.height = 1.82
+  person.weight = 90
 
-person = Person()
-person.name = "Giovani"
-person.height = 1.82
-person.weight = 90
+  person.bmi()
 
-person.bmi()
+
+if __name__ == "__main__":
+  main()
