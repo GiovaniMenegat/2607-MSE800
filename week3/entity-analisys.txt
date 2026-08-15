@@ -1,0 +1,9 @@
+1. add more one/ two attributes for any of the entities?
+  We could add some information about the grades of the student. Ideally it should be a new entity (with a relationship with Student, Lecture and Enrollment), but we can add as a attribute in the student for now.
+  Also, we can add a new attribute called disciplines in the Lecture entity, storing a list of disciplines names that this lecture will cover.
+
+2. Write the type of relationship between the entities and describe it.
+  The Lecture is the entity that holds the information about the class, and it's the center of the database. 
+  The Student entity has a relation with the Lecture entity and the Enrollment entity, storing which student is enrolled in which lecture.
+  Also, we have the Lecturer entity and the Subjects entity. Those entities store the teacher and the disciplines he teaches. 
+  With those informations, we are able to create another relationship between Lecturer, Subjects and Lecture, since the teacher will have some specific experience in some discipline and he will teach this skill to the specific lecture.
